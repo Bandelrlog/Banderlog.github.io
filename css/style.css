@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    background: silver;
+}
+
+ul {
+    list-style: none;
+}
+main {
+    padding-left: 50px;
+}
+
+.header {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid silver;
+    margin-bottom: 90px;
+}
+.logo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+.logo h1 span {
+    font-weight: normal;
+    display: block;
+}
+.logo2 h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+.menu a {
+    font-size: 18px;
+    padding: 30px;
+    color: black;
+}
+.photo {
+    margin-bottom: 90px;
+}
+.data {
+    margin-bottom: 160px;
+}
+.data p {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.data p span {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+
+}
+.footer p {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+.studyinfo {
+    margin-bottom: 160px;
+}
+.studyinfo p {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.jobinfo {
+    margin-bottom: 160px;
+}
+.jobinfo p {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
