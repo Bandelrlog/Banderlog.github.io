@@ -1,85 +1,402 @@
+@font-face {
+    /*/* -------- Light ------------*/*/
+font-family: "OpenSans";
+    src: url("../fonts/opensans-regular.ttf");
+    font-weight: 300;
+    font-style: normal; }
+@font-face {
+    /*/* -------- Light ------------ */*/
+font-family: "LobsterRegular";
+    src: url("../fonts/lobster-regular.ttf");
+    font-weight: 300;
+    font-style: normal; }
+
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
+    color: black;
 }
-a:hover {
-    background: silver;
-}
-
-ul {
+ul{
     list-style: none;
 }
-main {
-    padding-left: 50px;
-}
+.social {
 
-.header {
-    padding: 50px;
+    background: blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid silver;
-    margin-bottom: 90px;
+    position: relative;
+    z-index: -1;
+    text-align: center;
 }
-.logo h1 {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    color: black;
-}
-
-.logo h1 span {
-    font-weight: normal;
-    display: block;
-}
-.logo2 h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+.icon{
+    display: inline-block;
+    margin-left: 85%;
+    color: white;
+    font-size: 200%;
+    padding: 5px 25px 5px 25px;
 }
 
 .menu ul li {
     display: inline-block;
 }
-.menu a {
-    font-size: 18px;
-    padding: 30px;
-    color: black;
-}
-.photo {
-    margin-bottom: 90px;
-}
-.data {
-    margin-bottom: 160px;
-}
-.data p {
-    font-weight: bold;
-    color: black;
-    margin-bottom: 30px;
-    font-size: 36px;
-}
-.data p span {
-    font-weight: normal;
+.menu{
     font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    clear:both;
+    padding: 50px 5px 50px 5px;
+    text-align: right;
+}
+.menu ul li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+    font-family: OpenSans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+.logo{
+    position: absolute;
+    z-index: 5;
+    height: auto;
+}
+.bottom:hover{
+    background: red;
+    border-radius: 200px;
+}
+.elem:hover{
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 200px;
+    border: 2px blue solid;
+}
+.bottom{
+    background: red;
+    border-radius: 200px;
+    color: white;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+span {
+    font-weight: 700;
+}
+.foto{
+    background: url(../img/devochka.jpg) no-repeat;
+    background-size: 100%;
+    opacity: 0.95;
+}
+.tab_green .icon1{
+    color: green;
+    text-align: left;
+    font-size: 40px;
+    position: relative;
+    z-index: 3;
+}
+.tab_red .icon1{
+    color: red;
+    text-align: left;
+    font-size: 40px;
+    position: relative;
+    z-index: 3;
+}
+.tab_blue .icon1{
+    color: blue;
+    text-align: left;
+    font-size: 40px;
+    position: relative;
+    z-index: 3;
+}
+.icon_section{
+    width: 60px;
+    height: 60px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    right: 20px;
+}
+.fa{
+    width: 30px;
+
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
 
 }
-.footer p {
-    font-size: 36px;
+.icon1_text1{
+    padding-bottom: 10px;
+    font-family: LobsterRegular;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+}
+.icon1_text2{
+    padding-top: 10px;
+    font-family: OpenSans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+.tab_green{
+    color: white;
+    padding: 20px 50px 20px 50px;
+    border-radius: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}.tab_red{
+     color: white;
+     padding: 20px 50px 20px 50px;
+     border-radius: 200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+
+     background-color: red;
+ }
+.tab_blue{
+    color: white;
+    padding: 20px 50px 20px 50px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: blue;
 }
-.studyinfo {
-    margin-bottom: 160px;
+.line{
+    border-top:2px solid white;
+    width: 50%;
+
 }
-.studyinfo p {
-    font-size: 36px;
-    margin-bottom: 30px;
+.icon1_text{
+    display: inline-block;
+
+    justify-content: space-between;
+    align-items: center;
 }
-.jobinfo {
-    margin-bottom: 160px;
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -40px;
+    position: relative;
+    z-index: 3;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.jobinfo p {
-    font-size: 36px;
-    margin-bottom: 30px;
+.text{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.text p {
+    padding-top: 3px;
+    font-family: OpenSans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+.text h3{
+    padding-bottom: 50px;
+    font-family: LobsterRegular;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block_1{
+    padding: 50px;
+}
+.block_2{
+    padding: 50px;
+}
+.block_3{
+    padding: 50px;
+}
+.text_small{
+    text-align: center;
+    padding-top: 30px;
+    font-family: LobsterRegular;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 21px;
+    color: grey;
+}
+.text_big{
+    text-align: center;
+    padding-top: 10px;
+    font-family: LobsterRegular;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    color: blue;
+}
+.block_3 .foto_block{
+    padding-left: 50px;
+}
+
+.block_1 .foto_block{
+    padding-left: 50px;
+}
+.foto .text_1{
+    font-family: LobsterRegular;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    color: blue;
+    padding: 100px 20px 20px 20px;
+
+}
+.foto .text_2{
+    font-family: OpenSans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+}
+.action_bottom_1{
+    color: white;
+    background-color: red;
+    border-radius: 200px;
+    padding: 20px 10px 20px 10px;
+    margin-right: 20px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+.action_bottom_2{
+    color: white;
+    background-color: blue;
+    border-radius: 200px;
+    padding: 20px 10px 20px 10px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+.action_bottom{
+    display: flex;
+    padding: 30px 0px 150px 20px;
+}
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.menu ul li a:hover{
+    background: grey;
+}
+
+.menu .burger-menu {
+    display: none;
+    position: relative;
+}
+.menu .burger-menu:hover .menu-item ul {
+    display: block;
+}
+.menu .burger-menu .menu-item li {
+    margin-bottom:20px;
+}
+.menu-item ul {
+    display: none;
+    position: absolute;
+    text-align: right;
+    top: 35px;
+    left: 89%;
+}
+.menu-item ul li{
+    display: block;
+}
+.photo {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.about-me p {
+    text-align: justify;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+}
+
+.active-page {
+    background: grey;
+}
+
+@media only screen and ( max-width: 875px ) {
+    .photo {
+        float: none;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu .burger-menu {
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+    .menu-item ul li a{
+        color: red;
+        font-size: 16px ;
+        font-weight: bold;
+    }
+    .menu-item ul li a:hover{
+        background: blue;
+    }
+
 }
